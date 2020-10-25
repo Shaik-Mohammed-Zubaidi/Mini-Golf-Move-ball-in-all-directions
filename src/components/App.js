@@ -39,17 +39,25 @@ const App = () => {
     let copyY = Number(y);
     if (event.key === "ArrowRight") {
       copyX += 5;
+      let newPos = { left: `${copyX}px`, top: `${copyY}px` };
+      setBallPosition(newPos);
+      setX(copyX);
     } else if (event.key === "ArrowLeft") {
       copyX -= 5;
+      let newPos = { left: `${copyX}px`, top: `${copyY}px` };
+      setBallPosition(newPos);
+      setX(copyX);
     } else if (event.key === "ArrowUp") {
       copyY -= 5;
+      let newPos = { left: `${copyX}px`, top: `${copyY}px` };
+      setBallPosition(newPos);
+      setY(copyY);
     } else if (event.key === "ArrowDown") {
       copyY += 5;
+      let newPos = { left: `${copyX}px`, top: `${copyY}px` };
+      setBallPosition(newPos);
+      setY(copyY);
     }
-    let newPos = { left: `${copyX}px`, top: `${copyY}px` };
-    setBallPosition(newPos);
-    setX(copyX);
-    setY(copyY);
   };
 
   return (

@@ -16,13 +16,14 @@ const App = () => {
     };
   });
   const reset = () => {
-    let copyX = Number(x);
-    copyX = 0;
-    let copyY = Number(y);
-    copyY = 0;
-    setBallPosition({ left: `${copyX}px`, top: `${copyY}px` });
-    setX(copyX);
-    setY(copyY);
+    window.location.reload();
+    // let copyX = Number(x);
+    // copyX = 0;
+    // let copyY = Number(y);
+    // copyY = 0;
+    // setBallPosition({ left: `${copyX}px`, top: `${copyY}px` });
+    // setX(copyX);
+    // setY(copyY);
   };
   const handleStart = () => {
     setRenderBall(true);

@@ -54,10 +54,10 @@ const App = () => {
 
   return (
     <div className="playground">
-      {renderChoice()}
       <button onClick={reset} className="reset">
         Reset
       </button>
+      {renderChoice()}
     </div>
   );
 };
